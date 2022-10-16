@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <%= form_for(@book) do |book| %>
+
+        <div class="form-group">
+          <%= book.label :Judul_Buku %>
+          <%= book.text_field :judulBuku, class:'form-control', type: 'text', placeholder: 'Judul Buku' %>
+        </div>
+
+        <div class="form-group">
+          <%= book.label :Nama_Pengarang %>
+          <%= book.text_field :namaPengarang, class:'form-control', type: 'text', placeholder: 'Nama Pengarang' %>
+        </div>
+
+        <div class="form-group">
+          <%= book.label :Penerbit %>
+          <%= book.text_field :penerbit, class:'form-control', type: 'text', placeholder: 'Penerbit' %>
+        </div>
+
+        <div class="form-group">
+          <%= book.label :Tahun_Terbit %>
+          <%= book.text_field :tahunTerbit, class:'form-control', type: 'number', placeholder: 'Tahun Terbit' %>
+        </div>
+        <br>
+        <%= book.submit :Save, class:'btn btn-success' %>
+
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  book_title: MyString
+  purchase_date: 2022-10-16 12:34:28
+  shipped_at: 2022-10-16 12:34:28
+
+two:
+  name: MyString
+  book_title: MyString
+  purchase_date: 2022-10-16 12:34:28
+  shipped_at: 2022-10-16 12:34:28

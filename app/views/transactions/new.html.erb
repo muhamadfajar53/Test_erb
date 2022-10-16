@@ -1,0 +1,9 @@
+<%= render 'shared/navigation' %>
+  <div class= "container">
+    <h1>Tambah Peminjaman</h1>
+    <%= render "form", transaction: @transaction %>
+    <br>
+  <div>
+    <%= link_to "Back to transactions", transactions_path, class: "btn btn-primary" %>
+  </div>
+</div>

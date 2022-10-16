@@ -1,0 +1,15 @@
+<%= render 'shared/navigation' %>
+<div class= "container">
+<p style="color: green"><%= notice %></p>
+<h1>Data Peminjaman</h1>
+<div id="transactions">
+    <% @transactions.each do |transaction| %>
+    <%= render transaction %>
+    <p>
+      <%= link_to "Show this transaction", transaction, class:'btn btn-primary' %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New transaction", new_transaction_path, class:'btn btn-success' %>
+</div>

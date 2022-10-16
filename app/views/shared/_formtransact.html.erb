@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <%= form_for(@tp) do |transact| %>
+
+        <div class="form-group">
+          <%= transact.label :Nama_Peminjam %>
+          <%= transact.text_field :np, class:'form-control', type: 'text', placeholder: 'Judul Buku' %>
+        </div>
+
+        <div class="form-group">
+          <%= transact.label :Buku_Pinjma %>
+          <%= transact.text_field :bp, class:'form-control', type: 'text', placeholder: 'Nama Pengarang' %>
+        </div>
+
+        <div class="form-group">
+          <%= transact.label :tgl_pinjam %>
+          <%= transact.text_field :tgl_pinjam, class:'form-control', type: 'text', placeholder: 'Penerbit' %>
+        </div>
+
+        <div class="form-group">
+          <%= transact.label :tgl_pengembalian %>
+          <%= transact.text_field :tgl_pengembalian, class:'form-control', type: 'number', placeholder: 'Tahun Terbit' %>
+        </div>
+
+        <div class="form-group">
+          <%= transact.label :Status_pengembalian %>
+          <%= transact.text_field :status, class:'form-control', type: 'number', placeholder: 'Tahun Terbit' %>
+        </div>
+        <br>
+        <%= transact.submit :Save, class:'btn btn-success' %>
+
+    <% end %>
+  </div>
+</div>

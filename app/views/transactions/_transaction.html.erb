@@ -1,0 +1,20 @@
+<p id="<%= dom_id transaction %>">
+<table class="table table-bordered table-hover table-responsive">
+  <thead>
+      <tr>
+        <th> <strong>Nama</strong> </th>
+        <th> <strong>Buku</strong> </th>
+        <th> <strong>Tanggal Pinjam</strong> </th>
+        <th> <strong>Tanggal Jatuh Tempo</strong> </th>
+      </tr>
+  </thead>
+      <tbody>
+      <tr>
+        <td> <%= transaction.name %> </td>
+        <td> <%= transaction.book_title %> </td>
+        <td> <%= transaction.purchase_date %> </td>
+        <td> <%= transaction.shipped_at %> </td>
+        </tr>
+      </tbody>
+    </table>
+</p>

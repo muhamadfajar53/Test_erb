@@ -1,0 +1,11 @@
+<%= render 'shared/navigation' %>
+<p>
+<div class= "container">
+  <h1>Edit Data Transaksi</h1>
+    <%= render "form", transaction: @transaction %>
+    <br>
+  <div>
+    <%= link_to "Show this transaction", @transaction, class: "btn btn-primary" %> |
+    <%= link_to "Back to transactions", transactions_path, class: "btn btn-primary" %>
+  </div>
+</div>

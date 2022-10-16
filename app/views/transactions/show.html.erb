@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+<%= render 'shared/navigation' %>
+<div class= "container">
+  <%= render @transaction %>
+    <div>
+      <%= link_to "Edit this transaction", edit_transaction_path(@transaction), class:'btn btn-primary'  %> |
+      <%= link_to "Back to transactions", transactions_path, class:'btn btn-primary' %>
+      <p>
+      <%= button_to "Destroy this transaction", @transaction, method: :delete, class:'btn btn-danger' %>
+    </div>
+</div>
